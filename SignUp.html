@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Homepage Test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- navigation bar -->
+        <nav class = "navbar navbar-expand-md navbar-dark fixed-top" style = "background-color: #3f3f3f;">
+            <div class = "container-fluid">
+                <a class = "navbar-brand" href = "HomePage.html"> Obelisk </a>
+                <button type = "button" class = "navbar-toggler" data-toggle = "collapse" data-target = "#navcollapse">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class = "collapse navbar-collapse" id = "navcollapse">
+                <ul class = "navbar-nav" style = "width: 100%;">
+                    <li class = "nav-item" style = "padding-right: 30px;">
+                        <a class = "nav-link" href = "About.html">About</a>
+                    </li>
+                    <li class = "nav-item" style = "padding-right: 30px;">
+                        <a class = "nav-link" href = "FAQ.html">FAQ</a>
+                    </li>
+                    <li class = "nav-item" style = "padding-right: 30px;">
+                        <a class = "nav-link active" href = "SignUp.html">SignUp</a>
+                    </li>
+                    <li class = "nav-item" style = "padding-right: 30px;">
+                        <a class = "nav-link" href = "LogIn.html">LogIn</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- signup info-->
+        <br> <br> <br> <br>
+        <div class = "container-fluid" style = "width: 50%;">
+            <h3 class = "display-4 text-center">SIGN UP</h3>
+            <br> <br>
+            <form action = "login.php" class = "needs-validation" method = "post">
+                <div class = "form-group">
+                    <label for = "fname">First Name:</label>
+                    <input type = "text" class = "form-control" placeholder = "first name" name = "fname" required>
+                    <div class = "valid-feedback">Valid</div>
+                    <div class = "invalid-feedback">Required field. Please fill this out.</div>
+                </div>
+                <br>
+                <div class = "form-group">
+                    <label for = "lname">Last Name:</label>
+                    <input type = "text" class = "form-control" placeholder = "last name" name = "lname" required>
+                    <div class = "valid-feedback">Valid</div>
+                    <div class = "invalid-feedback">Required field. Please fill this out.</div>
+                </div>
+                <br>
+                <div class = "form-group">
+                    <label for = "email">Email:</label>
+                    <input type = "email" class = "form-control" placeholder = "email" name = "email" required>
+                    <div class = "valid-feedback">Valid</div>
+                    <div class = "invalid-feedback">Required field. Please fill this out.</div>
+                </div>
+                <br>
+                <div class = "form-group">
+                    <label for = "bio">Bio:</label>
+                    <input type = "text" class = "form-control" placeholder = "bio" name = "bio" required>
+                    <div class = "valid-feedback">Valid</div>
+                    <div class = "invalid-feedback">Required field. Please fill this out.</div>
+                </div>
+                <br>
+                <div class = "form-group">
+                    <label for = "password">Password:</label>
+                    <input type = "password" class = "form-control" placeholder = "password" name = "password" required>
+                    <div class = "valid-feedback">Valid</div>
+                    <div class = "invalid-feedback">Required field. Please fill this out.</div>
+                </div>
+                <br>
+                <div class = "form-group">
+                    <label for = "password">Confirm Password:</label>
+                    <input type = "password" class = "form-control" placeholder = "confirm password" name = "cpassword" required>
+                    <div class = "valid-feedback">Valid</div>
+                    <div class = "invalid-feedback">Required field. Please fill this out.</div>
+                </div>
+                <br>
+                <div class = "text-center">
+                    <div class = "form-group form-check">
+                        <label class = "form-check-label">
+                        <input type = "checkbox" class = "form-check-input" name = "checkbox" required> Agree to Terms and Conditions
+                        <div class = "valid-feedback">Valid</div>
+                        <div class = "invalid-feedback">Check this box to continue.</div>
+                    </div>
+                    <button type = "submit" class = "btn btn-primary">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <!-- link this page to Profile.html page after retieving the specified data from the database-->
+
+        <!-- direct to login page-->
+        <br> <br>
+        <hr style = "width: 75%; color:#3f3f3f;">
+        <br> <br>
+        <div class = "container-fluid text-center">
+            <p>Already have an account? </p>
+            <a href = "LogIn.html">LOG IN</a>
+        </div>
+
+        <!-- footer -->
+        <br> <br>
+        <footer>
+            <div class = "container-fluid" style = "padding-bottom: 2rem; padding-top: 2rem; background-color: #3f3f3f; color: #d5d5d5;">
+                <div class = "row text-center">
+                    <div class = "col-md-4">
+                        <hr style = "background-color: #d5d5d5; width: 75%;">
+                        <h5>Connect</h5>
+                        <hr style = "background-color: #d5d5d5; width: 75%;">
+                        <p>put info here</p>
+                        <p>put info here</p>
+                        <p>put info here</p>
+                    </div>
+                    <div class = "col-md-4">
+                        <hr style = "background-color: #d5d5d5; width: 75%;">
+                        <h5>Find us</h5>
+                        <hr style = "background-color: #d5d5d5; width: 75%;">
+                        <p>put info here</p>
+                        <p>put info here</p>
+                        <p>put info here</p>
+                    </div>
+                    <div class = "col-md-4">
+                        <hr style = "background-color: #d5d5d5; width: 75%;">
+                        <h5>Team</h5>
+                        <hr style = "background-color: #d5d5d5; width: 75%;">
+                        <p>put info here</p>
+                        <p>put info here</p>
+                        <p>put info here</p>
+                    </div>
+                </div>
+                <div class = "col-md-12 text-center">
+                    <hr style = "background-color: #d5d5d5; width: 75%;">
+                    <h5>&copy; somewebsite.com</h5>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
